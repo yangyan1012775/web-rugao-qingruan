@@ -1,0 +1,10 @@
+$(function(){
+	$('.act').on('mousemove',function(){
+		$(this).find('.display-none').css('display','block');
+		$(this).find('span').addClass('rotate');
+	});
+	$('.act').on('mouseout',function(){
+		$(this).find('.display-none').css('display','none');
+		$(this).find('span').removeClass('rotate');
+	});
+});
